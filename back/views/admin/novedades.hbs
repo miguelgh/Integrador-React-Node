@@ -1,0 +1,47 @@
+<div class="holder">
+    <div class="novedadesHead">
+        <div class="logout">
+            <h2>Administrador</h2>
+            <a href="/admin/login/logout" class="btn-logout">Cerrar Sesión</a>
+        </div>
+        <h3>Hola {{persona}}</h3>
+    </div>
+    <hr>
+    <div class="novedades">
+        <h2>Listado de novedades</h2>
+        <a href="/admin/novedades/agregar" class="btn-mas">Agregar +</a>
+    </div>
+    <div class="novedades">
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Título</th>
+                    <th scope="col">Imagen</th>
+                    <th class="textoIzq">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each novedades}}
+                <tr>
+                    <th class="numId" scope="row">{{id}}</th>
+                    <td>{{titulo}}</td>
+                    <td class="imgTabla">{{{imagen}}}</td>
+                    <td>
+                        <a class="btn-edit" href="/admin/novedades/modificar/{{id}}">Editar</a>
+                        <button class="boton-modal" onclick="abrirModal({{id}})">Eliminar</button>
+
+                        <div class="container-modal" id="modal{{id}}">
+                            <div class="content-modal">
+                                <p>¿Está seguro que desea eliminar la información?</p>
+                                <a class="btn-modal del" href="/admin/novedades/eliminar/{{id}}">Eliminar</a>
+                                <button class="btn-modal cancel" onclick="cerrarModal({{id}})">Cancelar</button>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+</div>

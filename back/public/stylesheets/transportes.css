@@ -1,0 +1,399 @@
+* {/*selector universal, reset de estilos*/
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+body{
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;/*1 rem*/
+    line-height: 20px;
+}
+
+h2{
+    color: #2e64a1;
+    font-weight: 400;
+    margin: 10px 0px;
+}
+.holder{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #2e64a1;
+    padding: 16px 0;/*1rem 0*/
+}
+header img{
+    margin-left: 10px;
+    width: 100px;
+}
+header h1{
+    color: white;
+    font-size: 40px;
+    font-weight: 100;
+    font-style: italic;
+    display: inline-block;
+    position: relative;
+    bottom: 35px;
+    margin-left: 10px;
+}
+
+.bloque{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* separador */
+.separador{
+    height: 30px;
+    background-color: #6da9ed;
+}
+/* fin separador */
+
+/* login */
+.login{
+    width: 400px;
+    padding: 35px 35px ;
+    border: solid 1px #ccc;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.login label{
+    margin-bottom: 3px;
+}
+.login input{
+    height: 30px;
+    margin-bottom: 10px;
+}
+.error{
+    font-size: 0.9rem;
+    color: rgb(224, 44, 44);
+    margin-bottom: 5px;
+}
+.ingresar{
+    color: white;
+    background-color: #6da9ed;
+    padding: 6px 20px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+}
+.ingresar:hover{
+    background-color: #2e64a1;
+}
+/* fin login */
+
+/*Novedades*/
+.novedades{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+}
+.novedades h2{
+    display: inline;
+}
+.novedades h3{
+    font-weight: 300;
+    margin: 5px 0;
+}
+.novedades h4{
+    font-weight: normal;
+}
+.novedades p{
+    margin: 10px 0px;
+}
+.novedadesHead{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;    
+}
+.novedadesHead h3{
+    font-weight: 300;
+    margin: 0;
+}
+.logout{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.btn-logout{
+    font-size: 14px;
+    color: white;
+    background-color: #f3814c;
+    padding: 8px 20px;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.btn-logout:hover{
+    background-color: #ca693c;
+}
+.btn-mas{
+    font-size: 14px;
+    color: white;
+    background-color: #00BCD4;
+    padding: 8px 20px;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.btn-mas:hover{
+    background-color: #04a9be;
+}
+.novedades table{
+    border: 1px solid #2e64a1;
+    border-radius: 3px;
+    width: 100%;
+    font-size: 14px;
+}
+.novedades thead{
+    background-color: #2e64a1;
+}
+.novedades th{
+    color: white;
+}
+.novedades thead th:nth-child(1) {
+    width: 5%;
+  }
+  
+.novedades thead th:nth-child(2) {
+    width: 55%;
+  }
+  
+.novedades thead th:nth-child(3) {
+    width: 15%;
+  }
+
+.novedades thead th:nth-child(4) {
+    width: 25%;
+}
+.imgTabla{
+    text-align: center;
+    padding: 5px;
+}
+
+.textoIzq {
+    text-align: left;
+    padding-left: 5px;
+}
+.novedades .numId {
+    color: #333;
+}
+.novedades tr{
+    height: 29px;
+}
+.novedades td{
+    padding-left: 5px;
+}
+.novedades tbody tr{
+    background-color: white;
+}
+.novedades tbody tr:nth-child(even){
+    background-color: #dee2e6;
+}
+.novedades tbody tr:hover{
+    background-color: rgb(110, 169, 237,0.3);
+}
+.btn-edit{
+    display: inline-block;
+    width: 65px;
+    text-align: center;
+    font-size: 13px;
+    color: white;
+    background-color: #00BCD4;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.btn-edit:hover{
+    background-color: #04a9be;
+}
+.btn-del{
+    display: inline-block;
+    width: 65px;
+    margin-left: 5px;
+    text-align: center;
+    font-size: 13px;
+    color: white;
+    background-color: red;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.btn-del:hover{
+    background-color: #cc0505;
+}
+/* modal */
+ /*:boton-modal:*/
+.boton-modal{
+    display: inline-block;
+    width: 65px;
+    height: 20px;
+    margin-left: 5px;
+    text-align: center;
+    font-size: 13px;
+    color: white;
+    background-color: red;
+    text-decoration: none;
+    cursor: pointer;
+    border: 0px;
+    transition: background-color 0.3s ease;
+}
+.boton-modal:hover{
+    background-color: #cc0505;
+}
+ /*:fin boton-modal:*/
+
+ /*:ventana-modal:*/
+.container-modal{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0; left:0;
+    background-color: rgba(144,148,150,0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+.content-modal{
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+.btn-modal{
+    font-size: 14px;
+    color: white;
+    padding: 4px 20px;
+    cursor: pointer;
+    border: none;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.del{
+    background-color: red;
+}
+.del:hover{
+    background-color: #cc0505;
+}
+
+.cancel{
+    background-color: #f3814c;
+    margin-left: 5px;
+}
+.cancel:hover{
+    background-color: #ca693c;
+}
+
+ /*:fin ventana-modal:*/
+/* fin modal */
+
+/*fin novedades*/
+
+/* Modificar */
+.modificar{
+    width: 400px;
+    padding: 20px 15px ;
+    border: solid 1px #ccc;
+    border-radius: 10px;
+}
+.modificar label{
+    display: block;
+    margin-bottom: 3px;
+}
+.modificar input{
+    display: block;
+    width: 366px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+.modificar p{
+    margin-top: 5px;
+}
+.modificar img{
+    margin: 8px 0px;
+}
+#cuerpo{
+    width: 366px;
+    resize: none;
+}
+.checkImg{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.checkImg input{
+    width: 20px;
+    margin: 0;
+}
+.checkImg label{
+    margin-left: 10px;
+}
+.btn-cancelar{
+    font-size: 14px;
+    color: white;
+    background-color: #f3814c;
+    padding: 6px 20px;
+    margin-left: 5px;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.btn-cancelar:hover{
+    background-color: #ca693c;
+}
+/* fin Modificar */
+
+/* agregar */
+.agregar{
+    width: 400px;
+    padding: 20px 15px ;
+    border: solid 1px #ccc;
+    border-radius: 10px;
+}
+.agregar label{
+    display: block;
+    margin-bottom: 3px;
+}
+.agregar input{
+    display: block;
+    height: 30px;
+    margin-bottom: 10px;
+}
+.error{
+    font-size: 0.9rem;
+    color: rgb(224, 44, 44);
+    margin-bottom: 5px;
+}
+.ingresar{
+    color: white;
+    background-color: #6da9ed;
+    padding: 6px 20px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+}
+.ingresar:hover{
+    background-color: #2e64a1;
+}
+/* fin agregar */
+
+footer{
+    background-color: #ccc;
+    clear:both;
+    color: #333;
+    text-align: center;
+    padding: 5px 0;
+    margin-top: 20px;
+}
